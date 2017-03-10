@@ -7,27 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA03FE14BC4321A3D20B526 /* libPods-Filme3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F8185D3A8741EA13CD9086 /* libPods-Filme3.a */; };
+		835608A81E4CCCD30027BB73 /* ListaFilmes.m in Sources */ = {isa = PBXBuildFile; fileRef = 835608A71E4CCCD30027BB73 /* ListaFilmes.m */; };
+		83C452901E4E278900092CED /* filme.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C4528F1E4E278900092CED /* filme.m */; };
 		83FFF3BC1E4A0D6C00440642 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FFF3BB1E4A0D6C00440642 /* main.m */; };
 		83FFF3BF1E4A0D6C00440642 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FFF3BE1E4A0D6C00440642 /* AppDelegate.m */; };
 		83FFF3C21E4A0D6C00440642 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FFF3C11E4A0D6C00440642 /* ViewController.m */; };
-		83FFF3C51E4A0D6C00440642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFF3C31E4A0D6C00440642 /* Main.storyboard */; };
 		83FFF3C81E4A0D6C00440642 /* Filme3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83FFF3C61E4A0D6C00440642 /* Filme3.xcdatamodeld */; };
 		83FFF3CA1E4A0D6C00440642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FFF3C91E4A0D6C00440642 /* Assets.xcassets */; };
 		83FFF3CD1E4A0D6C00440642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFF3CB1E4A0D6C00440642 /* LaunchScreen.storyboard */; };
+		83FFF3D61E4A120E00440642 /* DetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FFF3D51E4A120E00440642 /* DetalheViewController.m */; };
+		83FFF3D91E4A19DA00440642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFF3D71E4A19DA00440642 /* Main.storyboard */; };
+		E201888F1E6864BB00AEC839 /* Favoritos.m in Sources */ = {isa = PBXBuildFile; fileRef = E201888E1E6864BB00AEC839 /* Favoritos.m */; };
+		E29F421F1E69A6DD004DF21F /* FavoritosDetalhes.m in Sources */ = {isa = PBXBuildFile; fileRef = E29F421E1E69A6DC004DF21F /* FavoritosDetalhes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173A966FB0BA2714C63E23F4 /* Pods-Filme3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filme3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Filme3/Pods-Filme3.release.xcconfig"; sourceTree = "<group>"; };
+		835608A61E4CCCD30027BB73 /* ListaFilmes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaFilmes.h; sourceTree = "<group>"; };
+		835608A71E4CCCD30027BB73 /* ListaFilmes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaFilmes.m; sourceTree = "<group>"; };
+		83C4528E1E4E278900092CED /* filme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filme.h; sourceTree = "<group>"; };
+		83C4528F1E4E278900092CED /* filme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filme.m; sourceTree = "<group>"; };
 		83FFF3B71E4A0D6C00440642 /* Filme3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filme3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FFF3BB1E4A0D6C00440642 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83FFF3BD1E4A0D6C00440642 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83FFF3BE1E4A0D6C00440642 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		83FFF3C01E4A0D6C00440642 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		83FFF3C11E4A0D6C00440642 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		83FFF3C41E4A0D6C00440642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83FFF3C71E4A0D6C00440642 /* Filme3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Filme3.xcdatamodel; sourceTree = "<group>"; };
 		83FFF3C91E4A0D6C00440642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FFF3CC1E4A0D6C00440642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83FFF3CE1E4A0D6C00440642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FFF3D41E4A120E00440642 /* DetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalheViewController.h; sourceTree = "<group>"; };
+		83FFF3D51E4A120E00440642 /* DetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalheViewController.m; sourceTree = "<group>"; };
+		83FFF3D81E4A19DA00440642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89F0CF0E1D65E59BEE1075FC /* Pods-Filme3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filme3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Filme3/Pods-Filme3.debug.xcconfig"; sourceTree = "<group>"; };
+		E201888D1E6864BB00AEC839 /* Favoritos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favoritos.h; sourceTree = "<group>"; };
+		E201888E1E6864BB00AEC839 /* Favoritos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favoritos.m; sourceTree = "<group>"; };
+		E29F421D1E69A6DC004DF21F /* FavoritosDetalhes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritosDetalhes.h; sourceTree = "<group>"; };
+		E29F421E1E69A6DC004DF21F /* FavoritosDetalhes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritosDetalhes.m; sourceTree = "<group>"; };
+		E6F8185D3A8741EA13CD9086 /* libPods-Filme3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Filme3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA03FE14BC4321A3D20B526 /* libPods-Filme3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +66,8 @@
 			children = (
 				83FFF3B91E4A0D6C00440642 /* Filme3 */,
 				83FFF3B81E4A0D6C00440642 /* Products */,
+				D22529DDFD30A409CD93C3CF /* Pods */,
+				A2295BC4367DBD1BD8FCBEA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +82,17 @@
 		83FFF3B91E4A0D6C00440642 /* Filme3 */ = {
 			isa = PBXGroup;
 			children = (
-				83FFF3BD1E4A0D6C00440642 /* AppDelegate.h */,
+				E29F421D1E69A6DC004DF21F /* FavoritosDetalhes.h */,
+				E29F421E1E69A6DC004DF21F /* FavoritosDetalhes.m */,
+				E201888D1E6864BB00AEC839 /* Favoritos.h */,
+				E201888E1E6864BB00AEC839 /* Favoritos.m */,
+				83FFF3D41E4A120E00440642 /* DetalheViewController.h */,
+				83FFF3D51E4A120E00440642 /* DetalheViewController.m */,
 				83FFF3BE1E4A0D6C00440642 /* AppDelegate.m */,
+				83FFF3BD1E4A0D6C00440642 /* AppDelegate.h */,
 				83FFF3C01E4A0D6C00440642 /* ViewController.h */,
 				83FFF3C11E4A0D6C00440642 /* ViewController.m */,
-				83FFF3C31E4A0D6C00440642 /* Main.storyboard */,
+				83FFF3D71E4A19DA00440642 /* Main.storyboard */,
 				83FFF3C91E4A0D6C00440642 /* Assets.xcassets */,
 				83FFF3CB1E4A0D6C00440642 /* LaunchScreen.storyboard */,
 				83FFF3CE1E4A0D6C00440642 /* Info.plist */,
@@ -78,8 +106,29 @@
 			isa = PBXGroup;
 			children = (
 				83FFF3BB1E4A0D6C00440642 /* main.m */,
+				83C4528E1E4E278900092CED /* filme.h */,
+				83C4528F1E4E278900092CED /* filme.m */,
+				835608A61E4CCCD30027BB73 /* ListaFilmes.h */,
+				835608A71E4CCCD30027BB73 /* ListaFilmes.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2295BC4367DBD1BD8FCBEA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8185D3A8741EA13CD9086 /* libPods-Filme3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D22529DDFD30A409CD93C3CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89F0CF0E1D65E59BEE1075FC /* Pods-Filme3.debug.xcconfig */,
+				173A966FB0BA2714C63E23F4 /* Pods-Filme3.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83FFF3D11E4A0D6C00440642 /* Build configuration list for PBXNativeTarget "Filme3" */;
 			buildPhases = (
+				246216DB5B583CDAF23DE5BE /* [CP] Check Pods Manifest.lock */,
 				83FFF3B31E4A0D6C00440642 /* Sources */,
 				83FFF3B41E4A0D6C00440642 /* Frameworks */,
 				83FFF3B51E4A0D6C00440642 /* Resources */,
+				CD6467F0B498387FBC172F8B /* [CP] Embed Pods Frameworks */,
+				F1C7F026D750816F6D383AD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,13 +192,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FFF3D91E4A19DA00440642 /* Main.storyboard in Resources */,
 				83FFF3CD1E4A0D6C00440642 /* LaunchScreen.storyboard in Resources */,
 				83FFF3CA1E4A0D6C00440642 /* Assets.xcassets in Resources */,
-				83FFF3C51E4A0D6C00440642 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		246216DB5B583CDAF23DE5BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6467F0B498387FBC172F8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Filme3/Pods-Filme3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C7F026D750816F6D383AD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Filme3/Pods-Filme3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83FFF3B31E4A0D6C00440642 /* Sources */ = {
@@ -155,28 +255,33 @@
 			files = (
 				83FFF3C21E4A0D6C00440642 /* ViewController.m in Sources */,
 				83FFF3BF1E4A0D6C00440642 /* AppDelegate.m in Sources */,
+				E29F421F1E69A6DD004DF21F /* FavoritosDetalhes.m in Sources */,
+				835608A81E4CCCD30027BB73 /* ListaFilmes.m in Sources */,
+				E201888F1E6864BB00AEC839 /* Favoritos.m in Sources */,
 				83FFF3BC1E4A0D6C00440642 /* main.m in Sources */,
+				83FFF3D61E4A120E00440642 /* DetalheViewController.m in Sources */,
 				83FFF3C81E4A0D6C00440642 /* Filme3.xcdatamodeld in Sources */,
+				83C452901E4E278900092CED /* filme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83FFF3C31E4A0D6C00440642 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83FFF3C41E4A0D6C00440642 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83FFF3CB1E4A0D6C00440642 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83FFF3CC1E4A0D6C00440642 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		83FFF3D71E4A19DA00440642 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83FFF3D81E4A19DA00440642 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,9 +377,11 @@
 		};
 		83FFF3D21E4A0D6C00440642 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F0CF0E1D65E59BEE1075FC /* Pods-Filme3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Filme3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MR.Filme3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,9 +390,11 @@
 		};
 		83FFF3D31E4A0D6C00440642 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 173A966FB0BA2714C63E23F4 /* Pods-Filme3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Filme3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MR.Filme3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,6 +420,7 @@
 				83FFF3D31E4A0D6C00440642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
