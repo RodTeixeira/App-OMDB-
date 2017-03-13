@@ -145,13 +145,45 @@
             
     
         }
+    
+    UIAlertController * erro =[UIAlertController alertControllerWithTitle:@"Movie save" message:@"Stay on screen?" preferredStyle:UIAlertControllerStyleAlert];
+    
+    
+    UIAlertAction* yes =[UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action){
+        [erro dismissViewControllerAnimated:YES
+         
+                                 completion:^{
+                                     
+                                     
+                                 }];
+    }];
+    
+    UIAlertAction* no =[UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action){
+        [erro dismissViewControllerAnimated:YES
+         
+                                 completion:^{
+
+                                 }];
+        
+        NSArray *viewControllersFromStack = [self.navigationController viewControllers];
+        for (UIViewController *controller in [viewControllersFromStack reverseObjectEnumerator]) {
+            [controller.navigationController popViewControllerAnimated:NO];
+        }
+        ViewController *view = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+        [self.navigationController pushViewController:view animated:YES];
+    }];
+    
+    [erro addAction:yes];
+    [erro addAction:no];
+    [self presentViewController:erro animated:YES completion:nil];
+
    
     }
 
 
-    
-    
-    
+
+
+
 
 
 /*

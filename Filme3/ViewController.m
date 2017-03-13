@@ -58,6 +58,11 @@
     }
     
 }
+
+- (void)textFieldShouldReturn:(UISearchBar *)SearchBar {
+    [SearchBar resignFirstResponder];
+}
+
 //metodo criado para solicitar o serviço de busca na api
 -(void)rbcServico{
     
@@ -100,6 +105,7 @@
 - (IBAction)btnOK:(id)sender {
     [self rbcServico];
     [self.activi startAnimating];
+    [self textFieldShouldReturn:_SearchBar];
 }
 
 /*
