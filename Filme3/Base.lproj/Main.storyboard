@@ -53,7 +53,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="53" id="2GJ-gg-LHz"/>
                                         </constraints>
-                                        <state key="normal" title="Buscar"/>
+                                        <state key="normal" title="Search"/>
                                         <connections>
                                             <action selector="btnOK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hte-ua-Egj"/>
                                         </connections>
@@ -87,6 +87,11 @@
                                     <constraint firstItem="KEA-XL-sXB" firstAttribute="top" secondItem="Py4-FG-Pot" secondAttribute="top" id="ye5-Ym-T2d"/>
                                     <constraint firstItem="KEA-XL-sXB" firstAttribute="leading" secondItem="Py4-FG-Pot" secondAttribute="leading" id="zpl-SR-Xaz"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Od4-QD-vE5"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,6 +10,8 @@
 #import "filme.h"
 
 @interface ViewController : UIViewController<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
+
+
 @property (strong, nonatomic) IBOutlet UISearchBar *SearchBar;
 @property (weak, nonatomic)   IBOutlet UITableView *TableView;
 @property (weak, nonatomic)   IBOutlet UIButton        *btnOK;

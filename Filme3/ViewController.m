@@ -31,6 +31,9 @@
     [super viewDidLoad];
     // testa se a conexao com a internet
     [super viewDidLoad];
+    
+    [self becomeFirstResponder];
+    
     NSURL * testeURL =[NSURL URLWithString:@"https://www.google.com"];
     NSData * data =[NSData  dataWithContentsOfURL:testeURL];
     if (data) {
@@ -38,7 +41,6 @@
        self.SearchBar.delegate=self;
        self.TableView.delegate=self;
        self.TableView.dataSource=self;
-              
       
          // retorna erro de conexão
     }else{
@@ -58,10 +60,24 @@
     }
     
 }
-
-- (void)textFieldShouldReturn:(UISearchBar *)SearchBar {
-    [SearchBar resignFirstResponder];
+  //informar que a view pode responder aos toques
+- (BOOL)canBecomeFirstResponder {
+    return YES;
 }
+
+   //desativa o teclado quando for tocado fora do SearchBar
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    
+    //Verifique se o seu textField está com o teclado aberto e se o toque foi fora dele.
+    if ([_SearchBar isFirstResponder] && [touch view] != _SearchBar) {
+        [_SearchBar resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
+
+
 
 //metodo criado para solicitar o serviço de busca na api
 -(void)rbcServico{
@@ -99,16 +115,23 @@
     
     
 }
+   // ativa a busca pelo teclado
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [self rbcServico];
+    [self becomeFirstResponder];
+    [self.activi startAnimating];
+    
+}
 
-
+/*
 //button chama q executa o serviço
 - (IBAction)btnOK:(id)sender {
     [self rbcServico];
     [self.activi startAnimating];
-    [self textFieldShouldReturn:_SearchBar];
+ 
 }
 
-/*
+
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
  
@@ -156,7 +179,11 @@
     filme* ctrl= self.resultFilme [indexPath.row];
     detalhe.objFilme = ctrl;
     NSLog(@"%@", detalhe.objFilme);
+    
+    
     [self.navigationController pushViewController:detalhe animated:YES];
+  //  [self textFieldShouldReturn:_SearchBar];
+
     
     
 }
@@ -174,7 +201,6 @@
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     filme *filmeObjeto = self.resultFilme [indexPath.row];
-    
     cell.textLabel.text = [NSString stringWithFormat: @"%@", filmeObjeto.title];
     cell.textLabel.textColor = [UIColor whiteColor];
     
