@@ -74,7 +74,7 @@
 
 
 
-
+//mostra os detalhes do filme
 -(void)pegaDetalhe {
     NSString *imdbID = self.objFilme.imdbID;
     NSLog(@"%@", imdbID);
@@ -123,7 +123,7 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     
    
-        
+   //salva os detalhes no banco
     NSManagedObject *listaFav = [NSEntityDescription insertNewObjectForEntityForName:@"DBfilmes" inManagedObjectContext:context];
     [listaFav setValue:self.detalheTitle.text forKey:@"title"];
     [listaFav setValue:self.detalhePlot.text forKey:@"plot"];

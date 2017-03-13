@@ -17,8 +17,8 @@
 
 @interface ViewController ()
 {
-    NSMutableArray *totalStrings;
-    NSMutableArray *filtroStrings;
+    //NSMutableArray *totalStrings;
+    //NSMutableArray *filtroStrings;
     
 }
  @property (weak) NSString *matrix;
@@ -102,8 +102,8 @@
     [self.activi startAnimating];
 }
 
-
-/*-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+/*
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
  
     
@@ -114,6 +114,8 @@
         NSRange stringRange=[str rangeOfString:searchText options:NSCaseInsensitiveSearch];
         if (stringRange.location != NSNotFound)
         {
+
+        
             [filtroStrings addObject:str];
             
         }
@@ -123,8 +125,8 @@
     
     [self.TableView reloadData];
 }
-*/
 
+*/
 
 
 
