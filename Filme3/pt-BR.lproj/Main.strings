@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Released:"; ObjectID = "5bd-FA-flk"; */
+"5bd-FA-flk.text" = "Released:";
+
+/* Class = "UILabel"; text = "rumtime"; ObjectID = "7WN-n7-ftX"; */
+"7WN-n7-ftX.text" = "rumtime";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "97S-zQ-pM8"; */
+"97S-zQ-pM8.text" = "Title";
+
+/* Class = "UILabel"; text = "actor"; ObjectID = "9Md-Vr-IrQ"; */
+"9Md-Vr-IrQ.text" = "actor";
+
+/* Class = "UILabel"; text = "year"; ObjectID = "AfC-Rh-5Hw"; */
+"AfC-Rh-5Hw.text" = "year";
+
+/* Class = "UILabel"; text = "year"; ObjectID = "Cli-jV-cZ3"; */
+"Cli-jV-cZ3.text" = "year";
+
+/* Class = "UILabel"; text = "Gener"; ObjectID = "HIt-83-KKK"; */
+"HIt-83-KKK.text" = "Gener";
+
+/* Class = "UILabel"; text = "released"; ObjectID = "JzF-BZ-sQy"; */
+"JzF-BZ-sQy.text" = "released";
+
+/* Class = "UILabel"; text = "Gener:"; ObjectID = "KIy-5c-MtW"; */
+"KIy-5c-MtW.text" = "Gener:";
+
+/* Class = "UILabel"; text = "plot"; ObjectID = "KoM-Dh-3Sw"; */
+"KoM-Dh-3Sw.text" = "plot";
+
+/* Class = "UILabel"; text = "plot"; ObjectID = "LX0-Jg-U1t"; */
+"LX0-Jg-U1t.text" = "plot";
+
+/* Class = "UILabel"; text = "Plot:"; ObjectID = "MqA-hk-wvH"; */
+"MqA-hk-wvH.text" = "Plot:";
+
+/* Class = "UILabel"; text = "Plot:"; ObjectID = "OXh-Qf-kyT"; */
+"OXh-Qf-kyT.text" = "Plot:";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "Od4-QD-vE5"; */
+"Od4-QD-vE5.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Released:"; ObjectID = "P2w-07-apT"; */
+"P2w-07-apT.text" = "Released:";
+
+/* Class = "UILabel"; text = "Runtime:"; ObjectID = "QRe-ae-qKg"; */
+"QRe-ae-qKg.text" = "Runtime:";
+
+/* Class = "UILabel"; text = "Gener:"; ObjectID = "SBk-Hg-ADM"; */
+"SBk-Hg-ADM.text" = "Gener:";
+
+/* Class = "UILabel"; text = "gener"; ObjectID = "U0p-ir-H1N"; */
+"U0p-ir-H1N.text" = "gener";
+
+/* Class = "UINavigationItem"; title = "Pesquisar Filme"; ObjectID = "dGJ-aH-eHn"; */
+"dGJ-aH-eHn.title" = "Pesquisar Filme";
+
+/* Class = "UILabel"; text = "Actors:"; ObjectID = "ea4-Oc-bxT"; */
+"ea4-Oc-bxT.text" = "Actors:";
+
+/* Class = "UILabel"; text = "released"; ObjectID = "eg8-bx-B6o"; */
+"eg8-bx-B6o.text" = "released";
+
+/* Class = "UILabel"; text = "Year:"; ObjectID = "gus-rM-hxM"; */
+"gus-rM-hxM.text" = "Year:";
+
+/* Class = "UILabel"; text = "Actors:"; ObjectID = "gwk-fh-okH"; */
+"gwk-fh-okH.text" = "Actors:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "h63-ka-MSk"; */
+"h63-ka-MSk.text" = "Title";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "hYJ-Rt-tQW"; */
+"hYJ-Rt-tQW.text" = "title";
+
+/* Class = "UILabel"; text = "Runtime:"; ObjectID = "i4j-Jf-gde"; */
+"i4j-Jf-gde.text" = "Runtime:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "it1-ic-oZC"; */
+"it1-ic-oZC.text" = "Label";
+
+/* Class = "UILabel"; text = "runtime"; ObjectID = "tTs-Kb-y1n"; */
+"tTs-Kb-y1n.text" = "runtime";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "vMb-xO-n9f"; */
+"vMb-xO-n9f.text" = "title";
+
+/* Class = "UILabel"; text = "Year:"; ObjectID = "wXY-a7-KDv"; */
+"wXY-a7-KDv.text" = "Year:";
