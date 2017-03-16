@@ -21,7 +21,7 @@
     //NSMutableArray *filtroStrings;
     
 }
- @property (weak) NSString *matrix;
+ @property (strong) NSString *matrix;
 @end
 
 @implementation ViewController
@@ -29,11 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // testa se a conexao com a internet
-    [super viewDidLoad];
     
     [self becomeFirstResponder];
     
+     // testa se a conexao com a internet
     NSURL * testeURL =[NSURL URLWithString:@"https://www.google.com"];
     NSData * data =[NSData  dataWithContentsOfURL:testeURL];
     if (data) {
@@ -41,7 +40,8 @@
        self.SearchBar.delegate=self;
        self.TableView.delegate=self;
        self.TableView.dataSource=self;
-      
+        
+        
          // retorna erro de conexão
     }else{
         UIAlertController * erro =[UIAlertController alertControllerWithTitle:@"ERROR" message:@"Sem conexao com a internet!" preferredStyle:UIAlertControllerStyleActionSheet];
@@ -70,7 +70,7 @@
     
     UITouch *touch = [[event allTouches] anyObject];
     
-    //Verifique se o seu textField está com o teclado aberto e se o toque foi fora dele.
+    //Verifique se o searchbar está com o teclado aberto e se o toque foi fora dele.
     if ([_SearchBar isFirstResponder] && [touch view] != _SearchBar) {
         [_SearchBar resignFirstResponder];
     }
@@ -79,10 +79,16 @@
 
 
 
+
 //metodo criado para solicitar o serviço de busca na api
 -(void)rbcServico{
     
-      
+    //faz pesquisa aceitar acentuação
+    NSData *data = [_matrix dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *newString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    newString=_matrix;
+    
+    //solicita o serviço de busca na api
     _matrix = _SearchBar.text;
     [[ListaFilmes threadService] fncfilme:_matrix success:^(NSArray<filme *> *resultaFilme) {
         self.resultFilme = resultaFilme;
@@ -117,6 +123,7 @@
 }
    // ativa a busca pelo teclado
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
     [self rbcServico];
     [self becomeFirstResponder];
     [self.activi startAnimating];

@@ -80,6 +80,11 @@
     NSLog(@"%@", imdbID);
     [[ListaFilmes threadService]fncDetalhe:imdbID success:^(filme* filme) {
         self.objFilme = filme;
+        
+        [_detalheImage cancelImageDownloadTask];
+        [_detalheImage setImageWithURL: _objFilme.posterUrl];
+        [_imageBack setImageWithURL:_objFilme.backUrl];
+        
         _detalheTitle.text = self.objFilme.title;
         _detalheYear.text =self.objFilme.year;
         _detalheActors.text=self.objFilme.actors;
@@ -87,10 +92,6 @@
         _detalhePlot.text= self.objFilme.plot;
         _detalheReleased.text=self.objFilme.released;
         _detalheRuntime.text=self.objFilme.runtime;
-        [_detalheImage cancelImageDownloadTask];
-        
-        [_detalheImage setImageWithURL: _objFilme.posterUrl];
-        [_imageBack setImageWithURL:_objFilme.backUrl];
         
         [self.activiDetalhe stopAnimating];
         
@@ -145,7 +146,7 @@
             
     
         }
-    
+/*
     UIAlertController * erro =[UIAlertController alertControllerWithTitle:@"Movie save" message:@"Stay on screen?" preferredStyle:UIAlertControllerStyleAlert];
     
     
@@ -175,9 +176,9 @@
     
     [erro addAction:yes];
     [erro addAction:no];
+ 
     [self presentViewController:erro animated:YES completion:nil];
-
-   
+*/
     }
 
 
