@@ -93,10 +93,34 @@
     [[ListaFilmes threadService] fncfilme:_matrix success:^(NSArray<filme *> *resultaFilme) {
         self.resultFilme = resultaFilme;
         [[self TableView]reloadData ];
-        NSLog(@"%@",resultaFilme);
-            } error:^(NSURLSessionDataTask *sessionTesk, NSError *travo) {
+         NSLog(@"%@",resultaFilme);
+        
+        [self.activi stopAnimating];
+        
+        if (resultaFilme.count == 0) {
+            
+            UIAlertController * erro =[UIAlertController alertControllerWithTitle:@"ERROR" message:@"filme não econtrado!" preferredStyle:UIAlertControllerStyleActionSheet];
+            
+            UIAlertAction* ok =[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+                [erro dismissViewControllerAnimated:YES
+                                         completion:^{
+                                             
+                                             
+                                         }];
+                
+            }];
+            [erro addAction:ok];
+            [self presentViewController:erro animated:YES completion:nil];
+        }
+        
+        
+
+        
+        } error:^(NSURLSessionDataTask *sessionTesk, NSError *travo) {
         NSLog(@"error");
+            
                 if (travo) {
+              
                     UIAlertController * erro =[UIAlertController alertControllerWithTitle:@"ERROR" message:@"filme não econtrado!" preferredStyle:UIAlertControllerStyleActionSheet];
                     
                     
@@ -104,7 +128,7 @@
                         [erro dismissViewControllerAnimated:YES
                         
                                                  completion:^{
-                                                     
+                         
                                          
                                                  }];
                     }];
@@ -115,9 +139,17 @@
                     
                     
                 }
+                   
+               
+                
+            
                 
                 
     }];
+    
+    
+    
+    
     
     
 }
@@ -212,9 +244,6 @@
     cell.textLabel.textColor = [UIColor whiteColor];
     
     
-    [self.activi stopAnimating];
-  
-   
     }
     // chama lista de favoritos
 - (IBAction)btnLista:(id)sender {
@@ -232,7 +261,7 @@
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
+        [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 

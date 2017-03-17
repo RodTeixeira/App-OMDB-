@@ -30,6 +30,7 @@
         
     });
     
+    
     return __threadService;
     
 }
@@ -39,16 +40,16 @@
       //indica qual a URL ou site que feito a solicitação do serviço
         NSString * url =@"http://www.omdbapi.com/";
         
-        self.Httpmaneger= [[AFHTTPSessionManager alloc]initWithBaseURL:[NSURL URLWithString:url] sessionConfiguration:nil];
+     self.Httpmaneger= [[AFHTTPSessionManager alloc]initWithBaseURL:[NSURL URLWithString:url] sessionConfiguration:nil];
         //faz a requisição do json
         self.Httpmaneger.requestSerializer =[AFJSONRequestSerializer new];
         //recebe a resposta do json
         self.Httpmaneger.responseSerializer =[AFJSONResponseSerializer new];
-        [_Httpmaneger.requestSerializer setTimeoutInterval:20];
+        [_Httpmaneger.requestSerializer setTimeoutInterval:20.0];
         
-    }
+        }
     
-    
+
     return self;
     
 }
@@ -72,8 +73,10 @@
         
         
     }
+     
                  failure:error];
-    
+  
+  
 }
 
 
@@ -85,6 +88,7 @@
         success(detalheFilme);
      }
       failure:error];
+    
 }
 
 

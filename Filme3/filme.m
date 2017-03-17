@@ -26,7 +26,7 @@
         _imageBack=json[@"Poster"];
         _backUrl=[NSURL URLWithString:_imageBack];
         _posterUrl=[NSURL URLWithString:_poster];
-        
+       
     
 
     }
